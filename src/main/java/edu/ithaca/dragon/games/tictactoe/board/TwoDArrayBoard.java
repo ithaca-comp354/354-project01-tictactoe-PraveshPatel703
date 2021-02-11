@@ -46,8 +46,13 @@ public class TwoDArrayBoard implements TicTacToeBoard{
             squares[square.getValue0()][square.getValue1()] = symbol;
         }
         else {
-            throw new IllegalArgumentException("Bad symbol or square: " + symbol);
+            throw new IllegalArgumentException("Bad symbol or square: " + symbol + square.toString());
         }
+    }
+
+    @Override
+    public char checkSquare(Pair<Integer, Integer> square){
+        return squares[square.getValue0()][square.getValue1()];
     }
 
     @Override
