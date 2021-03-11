@@ -10,7 +10,6 @@ import edu.ithaca.dragon.games.tictactoe.board.TicTacToeBoard;
 public class HumanPlayer implements TicTacToePlayer {
     private Scanner keyboard = new Scanner(System.in);
 
-    @Override
     public Pair<Integer, Integer> chooseSquare(TicTacToeBoard curBoard, char yourSymbol) {
         if (curBoard.calcGameStatus() != GameStatus.PLAYING){
             throw new IllegalArgumentException("No valid moves");

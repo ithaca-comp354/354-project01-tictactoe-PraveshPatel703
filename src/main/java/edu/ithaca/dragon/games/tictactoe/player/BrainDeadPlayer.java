@@ -6,7 +6,6 @@ import edu.ithaca.dragon.games.tictactoe.board.TicTacToeBoard;
 
 public class BrainDeadPlayer implements TicTacToePlayer {
 
-    @Override
     public Pair<Integer, Integer> chooseSquare(TicTacToeBoard curBoard, char yourSymbol) {
         for (int y=0; y<3; y++){
             for(int x=0; x<3;x++){
